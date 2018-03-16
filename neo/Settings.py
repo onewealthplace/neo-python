@@ -327,6 +327,8 @@ settings.setup_testnet()
 # By default, set loglevel to INFO. DEBUG just print a lot of internal debug statements
 settings.set_loglevel(logging.INFO)
 
+settings.set_log_smart_contract_events(True)
+
 # Check if currently installed dependencies match the requirements
 # Can be bypassed with `SKIP_DEPS_CHECK=1 python prompt.py`
 if not os.getenv("SKIP_DEPS_CHECK") and not IS_PACKAGE_INSTALL:
